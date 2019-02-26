@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 300;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 900px;
+    padding-top: 5px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 250px; 
+    height: 144.34px;
+    left: -30px;
+    top: 0;
+    font-size: 3em;
+    background-color: orangered;
+    transform: rotate(-30deg);
+}
+
+h1:after, h1::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+}
+
+h1:before {
+    bottom: 100%;
+    border-bottom: 72.17px solid orangered;
+}
+  
+h1:after {
+    top: 100%;
+    width: 0;
+    border-top: 72.17px solid orangered;
+}
+
+nav h2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px; 
+    height: 115.47px;
+    margin: 40px 0;
+    margin-left: 420px;
+    padding: 10px;
+    text-align: center;
+    background-color: orangered;
+}
+  
+nav h2:before,
+nav h2:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+  
+nav h2:before {
+    bottom: 100%;
+    border-bottom: 57.74px solid orangered;
+}
+  
+nav h2:after {
+    top: 100%;
+    width: 0;
+    border-top: 57.74px solid orangered;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    list-style-type: none;
+}
+
+nav ul li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px; 
+    height: 86.60px;
+    margin: 26px 5px;
+    padding: 5px;
+    word-wrap: wrap;
+    background-color: orangered;
+}
+
+nav ul li:nth-child(8n+5) {
+    margin-left: 85px;
+}
+  
+nav ul li:before,nav ul li:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+}
+  
+nav ul li:before {
+    bottom: 100%;
+    border-bottom: 43.30px solid orangered;
+}
+  
+nav ul li:after {
+    top: 100%;
+    width: 0;
+    border-top: 43.30px solid orangered;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+nav ul li a:nth-of-type(1) {
+    font-size: 1.3em;
+}
